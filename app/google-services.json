@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "251496938732",
+    "firebase_url": "https://food-5378a-default-rtdb.firebaseio.com",
+    "project_id": "food-5378a",
+    "storage_bucket": "food-5378a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251496938732:android:4ec89a3220a391381b39c9",
+        "android_client_info": {
+          "package_name": "com.example.foodorder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBq-PBzvqKZs-IVO2Fd8CyPLbairbEqLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
