@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+<!--    <application-->
+<!--        android:allowBackup="true"-->
+<!--        android:icon="@mipmap/ic_launcher"-->
+<!--        android:label="@string/app_name"-->
+<!--        android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--        android:supportsRtl="true"-->
+<!--        android:theme="@style/AppTheme">-->
+<!--        <activity android:name=".chefFoodPanel.chef_postDish"></activity>-->
+<!--&lt;!&ndash;        <activity android:name=".Delivery_sendotp" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <activity android:name=".DeliveryForgotPassword" />&ndash;&gt;-->
+<!--        <activity android:name=".DeliveryFoodPanel_BottomNavigation" />-->
+<!--&lt;!&ndash;        <activity android:name=".Delivery_VerifyPhone" />&ndash;&gt;-->
+<!--        <activity android:name=".ForgotPassword" />-->
+<!--        <activity android:name=".CustomerFoodPanel_BottomNavigation" />-->
+<!--        <activity android:name=".sendotp" />-->
+<!--        <activity android:name=".VerifyPhone" />-->
+<!--        <activity android:name=".Chefsendotp" />-->
+<!--        <activity android:name=".ChefForgotPassword" />-->
+<!--        <activity android:name=".ChefFoodPanel_BottomNavigation" />-->
+<!--        <activity android:name=".ChefVerifyPhone" />-->
+<!--        <activity android:name=".Delivery_Registration" />-->
+<!--        <activity android:name=".Delivery_Loginphone" />-->
+<!--        <activity android:name=".Delivery_Login" />-->
+<!--        <activity android:name=".Registration" />-->
+<!--        <activity android:name=".Loginphone" />-->
+<!--        <activity android:name=".Login" />-->
+<!--        <activity android:name=".ChefRegistration" />-->
+<!--        <activity android:name=".Chefloginphone" />-->
+<!--        <activity android:name=".ChefLogin" />-->
+<!--        <activity android:name=".ChooseOne" />-->
+<!--        <activity android:name=".MainMenu" />-->
+<!--        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>-->
+<!--        <activity android:name=".MainActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--    </application>-->
+<!--    <manifest>-->
+<!--        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+<!--    </manifest>-->
 
     <application
         android:allowBackup="true"
@@ -13,6 +56,12 @@
         android:theme="@style/Theme.FoodOrder"
         tools:targetApi="34">
         <activity
+            android:name=".DeliveryFoodPanel_BottomNavigation"
+            android:exported="false" />
+        <activity
+            android:name=".chefFoodPanel.chef_postDish"
+            android:exported="false" />
+        <activity
             android:name=".ChefRegistration"
             android:exported="false" />
         <activity
@@ -22,7 +71,7 @@
             android:name=".ForgotPassword"
             android:exported="false" />
         <activity
-            android:name=".CustomerFoofPanel_BottomNavigation"
+            android:name=".CustomerFoodPanel_BottomNavigation"
             android:exported="false" />
         <activity
             android:name=".VerifyPhone"
@@ -69,10 +118,11 @@
         <activity
             android:name=".MainMenu"
             android:exported="false" />
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -80,5 +130,7 @@
             </intent-filter>
         </activity>
     </application>
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+
 
 </manifest>

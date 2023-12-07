@@ -179,7 +179,7 @@ public class sendotp extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(task.isSuccessful()){
-                            startActivity(new Intent(sendotp.this,CustomerFoofPanel_BottomNavigation.class));
+                            startActivity(new Intent(sendotp.this, CustomerFoodPanel_BottomNavigation.class));
                             finish();
 
                         }else{

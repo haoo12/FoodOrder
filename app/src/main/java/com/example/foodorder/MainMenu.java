@@ -9,6 +9,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import androidx.appcompat.widget.Toolbar;
+
 
 public class MainMenu extends AppCompatActivity {
 
@@ -20,6 +22,7 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
 
         final Animation zoomin = AnimationUtils.loadAnimation(this,R.anim.zoomin);
         final Animation zoomout = AnimationUtils.loadAnimation(this,R.anim.zoomout);
@@ -98,9 +101,4 @@ public class MainMenu extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        System.gc();
-    }
 }

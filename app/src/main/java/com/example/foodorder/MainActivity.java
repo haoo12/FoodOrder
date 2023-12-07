@@ -2,10 +2,10 @@ package com.example.foodorder;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         imageView = (ImageView)findViewById(R.id.imageView3);
         textView = (TextView)findViewById(R.id.textView7);
@@ -76,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
                                 if(role.equals("Customer")){
-                                    startActivity(new Intent(MainActivity.this,CustomerFoofPanel_BottomNavigation.class));
+                                    startActivity(new Intent(MainActivity.this, CustomerFoodPanel_BottomNavigation.class));
                                     finish();
 
                                 }
